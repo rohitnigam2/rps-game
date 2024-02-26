@@ -1,0 +1,157 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.g-title {
+    background: black;
+    color: white;
+    height: 5rem;
+    text-align: center;
+    line-height: 5rem;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px 50px;
+    gap: 20px;
+}
+.choice {
+    position: relative;
+    bottom: 0px;
+    transition: all 0.5s;
+}
+.choice:hover {
+    bottom: 10px;
+    cursor: pointer;
+}
+.choice img {
+    width: 120px;
+    height: 140px;
+    object-fit: cover;
+}
+.choice h3 {
+    text-align: center;
+    font-size: 25px;
+    line-height: 3rem;
+}
+div#rock:hover h3 {
+    color: #19aba0;
+}
+div#pepar:hover h3 {
+    color: #e2122c;
+}
+div#scissors:hover h3 {
+    color: #b3cc33;
+}
+h2#cho-head {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 40px;
+}
+.score {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 40px;
+}
+.score p {
+    font-size: 25px;
+}
+.score h3 {
+    font-size: 50px;
+}
+.user-score {
+    background: green;
+    color: white;
+    padding: 20px;
+}
+.com-score {
+    background: red;
+    color: white;
+    padding: 20px;
+}
+.re-btn {
+    text-align: center;
+    margin-top: 40px;
+}
+.re-btn h3 {
+    font-size: 22px;
+    background: black;
+    display: inline;
+    color: white;
+    padding: 20px;
+}
+.re-btn h2 {
+    padding-bottom: 32px;
+    font-size: 50px;
+}
+main {
+    display: flex;
+    align-items: baseline;
+    background: aliceblue;
+}
+.sec-one {
+    width: 50%;
+}
+.sec-two {
+    width: 50%;
+}
+h2#tag-line {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+h2#tag-line a {
+    color: red;
+}
+h2#tag-line a:hover {
+    color: green;
+}
+.sec-one {
+    border-right: 2px solid #ccc;
+}
+h3#msg {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+div#paper:hover h3 {
+    color: #e2112b;
+}
+
+/* Mobile Media Query */
+
+@media only screen and (max-width: 767px) {
+    html, body {
+        overflow-x: hidden !important;
+    }
+    .sec-one {
+        width: 100%;
+    }
+    .sec-two {
+        width: 100%;
+        border-top: 2px solid #ccc;
+        padding-bottom: 50px;
+    }
+    main {
+        display: block;
+        background: aliceblue;
+    }
+    .choice img {
+        width: 80px;
+        height: 80px;
+        object-fit: cover;
+    }
+    h2#cho-head {
+        font-size: 30px;
+    }
+    h2#tag-line a {
+        color: red;
+        display: block;
+    }
+    h3#msg {
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+}
